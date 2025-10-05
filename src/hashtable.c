@@ -99,6 +99,16 @@ int *find_hashtable(HashTable* hashtable, const char *key){
     return NULL;
 }
 
+void find_inc_hashtable(HashTable* hashtable, const char *key){
+    // incremant val
+    unsigned int index = hash(key);
+    for(Node* curr = hashtable->table[index]; curr = curr->next){
+        if(strcmp(curr->key, key) == 0){
+            curr->val++;
+        }
+    }
+}
+
 void free_hashtable(HashTable* hashtable){
     for(int i = 0; i < TABLE_SIZE; i++){
         Node* curr = hashtable->table[i];
