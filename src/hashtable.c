@@ -1,8 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include "filing.h"
-
-
 
 // Table size = number of lines of toxic_words.txt
 // constant hence defined
@@ -11,10 +10,10 @@
 
 // Node* next because linklist created and maintained incase of collision
 // when key is hashed
-typedef struct{
+typedef struct Node{
     char* key;
     int val;
-    Node* next;
+    struct Node* next;
 } Node;
 
 
@@ -29,7 +28,7 @@ typedef struct{
 // http://www.cse.yorku.ca/~oz/hash.html
 // djb2 hashing algorithm
 
-unsigned int hash(unsigned char *str){
+unsigned int hash(const unsigned char *str){
     unsigned long hash = 5381;
     int c;
 
@@ -50,7 +49,7 @@ Node *create_node(const char* key, int val){
         exit(EXIT_FAILURE);
     }
 
-    newnode->key = key;
+    newnode->key = strdup(key);
     newnode->val = val;
     newnode->next = NULL;
     return newnode;

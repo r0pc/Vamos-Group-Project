@@ -152,29 +152,29 @@ src/filing.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyCProject.dir\build.make CMakeFiles/MyCProject.dir/src/filing.c.s
 .PHONY : src/filing.c.s
 
-src/hashmap.obj: src/hashmap.c.obj
-.PHONY : src/hashmap.obj
+src/hashtable.obj: src/hashtable.c.obj
+.PHONY : src/hashtable.obj
 
 # target to build an object file
-src/hashmap.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyCProject.dir\build.make CMakeFiles/MyCProject.dir/src/hashmap.c.obj
-.PHONY : src/hashmap.c.obj
+src/hashtable.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyCProject.dir\build.make CMakeFiles/MyCProject.dir/src/hashtable.c.obj
+.PHONY : src/hashtable.c.obj
 
-src/hashmap.i: src/hashmap.c.i
-.PHONY : src/hashmap.i
+src/hashtable.i: src/hashtable.c.i
+.PHONY : src/hashtable.i
 
 # target to preprocess a source file
-src/hashmap.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyCProject.dir\build.make CMakeFiles/MyCProject.dir/src/hashmap.c.i
-.PHONY : src/hashmap.c.i
+src/hashtable.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyCProject.dir\build.make CMakeFiles/MyCProject.dir/src/hashtable.c.i
+.PHONY : src/hashtable.c.i
 
-src/hashmap.s: src/hashmap.c.s
-.PHONY : src/hashmap.s
+src/hashtable.s: src/hashtable.c.s
+.PHONY : src/hashtable.s
 
 # target to generate assembly for a file
-src/hashmap.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyCProject.dir\build.make CMakeFiles/MyCProject.dir/src/hashmap.c.s
-.PHONY : src/hashmap.c.s
+src/hashtable.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyCProject.dir\build.make CMakeFiles/MyCProject.dir/src/hashtable.c.s
+.PHONY : src/hashtable.c.s
 
 src/main.obj: src/main.c.obj
 .PHONY : src/main.obj
@@ -236,9 +236,9 @@ help:
 	@echo ... src/filing.obj
 	@echo ... src/filing.i
 	@echo ... src/filing.s
-	@echo ... src/hashmap.obj
-	@echo ... src/hashmap.i
-	@echo ... src/hashmap.s
+	@echo ... src/hashtable.obj
+	@echo ... src/hashtable.i
+	@echo ... src/hashtable.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s
