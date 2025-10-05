@@ -40,4 +40,5 @@ cmake --build build
 - Tokenizer
 - Hashmap (For Toxic words dataset)
 - QuickSort
-- Data Analysis
+- Data Analysis (top 10 toxic words, avg word lenght, ....)
+- GUI / TUI 
