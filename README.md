@@ -1,6 +1,18 @@
 # group name ???
 
-# DONOT TOUCH gitignore or CMakeLists.txt
+## DONOT TOUCH gitignore or CMakeLists.txt
+
+### git clone cmd to get repo to pc
+
+### Software Needed
+- git
+- CMake
+- gcc compiler or Mingw
+- vscode
+
+``` bash
+git clone https://github.com/r0pc/group-project-programming.git
+```
 
 ### to get new version on local pc
 
