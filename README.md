@@ -2,13 +2,13 @@
 
 ## DONOT TOUCH gitignore or CMakeLists.txt
 
-### git clone cmd to get repo to pc
-
 ### Software Needed
 - git
 - CMake
 - gcc compiler or Mingw
 - vscode
+
+### git clone cmd to get repo to pc
 
 ``` bash
 git clone https://github.com/r0pc/group-project-programming.git
