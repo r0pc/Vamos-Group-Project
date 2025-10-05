@@ -38,7 +38,7 @@ cmake --build build
 ## Tasks:
 - Filing (Both .txt & .csv)
 - Tokenizer
-- Hashmap (For Toxic words dataset)
+- ~~ Hashmap (For Toxic words dataset) ~~
 - QuickSort
 - Data Analysis (top 10 toxic words, avg word lenght, ....)
 - GUI / TUI 
