@@ -102,7 +102,7 @@ int *find_hashtable(HashTable* hashtable, const char *key){
 void find_inc_hashtable(HashTable* hashtable, const char *key){
     // incremant val
     unsigned int index = hash(key);
-    for(Node* curr = hashtable->table[index]; curr = curr->next){
+    for(Node* curr = hashtable->table[index]; curr; curr = curr->next){
         if(strcmp(curr->key, key) == 0){
             curr->val++;
         }
@@ -128,7 +128,6 @@ HashTable* create_hashtable(char* file_name){
 
     FILE* fileptr = open_file(file_name);
     char buff[64];
-
 
     HashTable *hashtable = init_hashtable();
     while(fgets(buff, sizeof(buff), fileptr)){

@@ -27,9 +27,12 @@ void insert_hashtable(HashTable* hashtable, char* key, int val);
 
 int *find_hashtable(HashTable* hashtable, const char *key);
 
+void find_inc_hashtable(HashTable* hashtable, const char *key);
+
 void free_hashtable(HashTable* hashtable);
 
 HashTable* create_hashtable(char* file_name);
+
 
 
 #endif
