@@ -4,6 +4,8 @@
 #include "filing.h"
 
 
+// takes in string and returns an arr.
+// ex: "my name is rafay" -> ["my", "name", "is", "rafay"]
 
 char** tokenize(char* s){
     unsigned int curr_capcity = 0;
@@ -20,4 +22,6 @@ char** tokenize(char* s){
         arr[curr_element++] = strdup(token);
         token = strtok(NULL, delimeter);
     }
+
+    return arr;
 } 
