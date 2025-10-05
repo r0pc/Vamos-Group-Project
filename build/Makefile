@@ -115,6 +115,115 @@ depend:
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
+#=============================================================================
+# Target rules for targets named MyCProject
+
+# Build rule for target.
+MyCProject: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 MyCProject
+.PHONY : MyCProject
+
+# fast build rule for target.
+MyCProject/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyCProject.dir\build.make CMakeFiles/MyCProject.dir/build
+.PHONY : MyCProject/fast
+
+src/filing.obj: src/filing.c.obj
+.PHONY : src/filing.obj
+
+# target to build an object file
+src/filing.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyCProject.dir\build.make CMakeFiles/MyCProject.dir/src/filing.c.obj
+.PHONY : src/filing.c.obj
+
+src/filing.i: src/filing.c.i
+.PHONY : src/filing.i
+
+# target to preprocess a source file
+src/filing.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyCProject.dir\build.make CMakeFiles/MyCProject.dir/src/filing.c.i
+.PHONY : src/filing.c.i
+
+src/filing.s: src/filing.c.s
+.PHONY : src/filing.s
+
+# target to generate assembly for a file
+src/filing.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyCProject.dir\build.make CMakeFiles/MyCProject.dir/src/filing.c.s
+.PHONY : src/filing.c.s
+
+src/hashmap.obj: src/hashmap.c.obj
+.PHONY : src/hashmap.obj
+
+# target to build an object file
+src/hashmap.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyCProject.dir\build.make CMakeFiles/MyCProject.dir/src/hashmap.c.obj
+.PHONY : src/hashmap.c.obj
+
+src/hashmap.i: src/hashmap.c.i
+.PHONY : src/hashmap.i
+
+# target to preprocess a source file
+src/hashmap.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyCProject.dir\build.make CMakeFiles/MyCProject.dir/src/hashmap.c.i
+.PHONY : src/hashmap.c.i
+
+src/hashmap.s: src/hashmap.c.s
+.PHONY : src/hashmap.s
+
+# target to generate assembly for a file
+src/hashmap.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyCProject.dir\build.make CMakeFiles/MyCProject.dir/src/hashmap.c.s
+.PHONY : src/hashmap.c.s
+
+src/main.obj: src/main.c.obj
+.PHONY : src/main.obj
+
+# target to build an object file
+src/main.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyCProject.dir\build.make CMakeFiles/MyCProject.dir/src/main.c.obj
+.PHONY : src/main.c.obj
+
+src/main.i: src/main.c.i
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyCProject.dir\build.make CMakeFiles/MyCProject.dir/src/main.c.i
+.PHONY : src/main.c.i
+
+src/main.s: src/main.c.s
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyCProject.dir\build.make CMakeFiles/MyCProject.dir/src/main.c.s
+.PHONY : src/main.c.s
+
+src/tokenize.obj: src/tokenize.c.obj
+.PHONY : src/tokenize.obj
+
+# target to build an object file
+src/tokenize.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyCProject.dir\build.make CMakeFiles/MyCProject.dir/src/tokenize.c.obj
+.PHONY : src/tokenize.c.obj
+
+src/tokenize.i: src/tokenize.c.i
+.PHONY : src/tokenize.i
+
+# target to preprocess a source file
+src/tokenize.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyCProject.dir\build.make CMakeFiles/MyCProject.dir/src/tokenize.c.i
+.PHONY : src/tokenize.c.i
+
+src/tokenize.s: src/tokenize.c.s
+.PHONY : src/tokenize.s
+
+# target to generate assembly for a file
+src/tokenize.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyCProject.dir\build.make CMakeFiles/MyCProject.dir/src/tokenize.c.s
+.PHONY : src/tokenize.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -123,6 +232,19 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... MyCProject
+	@echo ... src/filing.obj
+	@echo ... src/filing.i
+	@echo ... src/filing.s
+	@echo ... src/hashmap.obj
+	@echo ... src/hashmap.i
+	@echo ... src/hashmap.s
+	@echo ... src/main.obj
+	@echo ... src/main.i
+	@echo ... src/main.s
+	@echo ... src/tokenize.obj
+	@echo ... src/tokenize.i
+	@echo ... src/tokenize.s
 .PHONY : help
 
 
