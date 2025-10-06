@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "filing.h"
+#include "file.h"
 
 // Table size = number of lines of toxic_words.txt
 // constant hence defined
@@ -120,6 +120,21 @@ void free_hashtable(HashTable* hashtable){
     }
 
     free(hashtable);
+}
+
+
+// convert hashtable to arr
+HashTable* con_hashtable_arr(HashTable* hashtable){
+    HashTable* hash_arr;
+    int c = 0;
+    for(int i = 0; i < TABLE_SIZE; i++){
+        Node* curr = hashtable->table[i];
+        while(curr){
+            hash_arr->table[c] = curr;
+            c++;
+        }
+    }
+    return hash_arr;
 }
 
 HashTable* create_hashtable(char* file_name){

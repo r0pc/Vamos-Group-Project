@@ -3,7 +3,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include "filing.h"
+#include "file.h"
 
 #define TABLE_SIZE 10
 
