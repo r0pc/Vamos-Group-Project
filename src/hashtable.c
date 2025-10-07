@@ -123,19 +123,7 @@ void free_hashtable(HashTable* hashtable){
 }
 
 
-// convert hashtable to arr
-HashTable* con_hashtable_arr(HashTable* hashtable){
-    HashTable* hash_arr;
-    int c = 0;
-    for(int i = 0; i < TABLE_SIZE; i++){
-        Node* curr = hashtable->table[i];
-        while(curr){
-            hash_arr->table[c] = curr;
-            c++;
-        }
-    }
-    return hash_arr;
-}
+
 
 HashTable* create_hashtable(char* file_name){
     // loads toxic.txt file and creates a hashtable
